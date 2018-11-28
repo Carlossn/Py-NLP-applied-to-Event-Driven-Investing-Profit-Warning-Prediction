@@ -1,0 +1,21 @@
+# PW info scrapped from http://www.rttnews.com/Calendar/ProfitWarnings.aspx?PageNum=1
+
+# Instructions:
+#
+# 1st) Scrapping 
+# Open Anaconda Prompt Terminal
+# Locate pwarning folde where the file "scrapy.cfg" is present and execute:
+scrapy crawl pw_spider
+#
+# 2nd) Keeping oldest PW records per company:
+# When scrapy is done, go back to Anaconda Prompt Terminal and type: 
+test= pd.read_csv(pw_data.csv).sort('Date',ascending= True).groupby('Symbol').head(1) 
+test.to_csv('pw_data_clean.csv',index=False)
+#
+# 3rd) Adding Sector/Industry Info:
+# save info from stocks in NYSE, AMEX and NASDAQ (Symbol, Sector, Industry) in sec_info.csv:
+# http://www.nasdaq.com/screening/company-list.aspx  
+# Take the csv file to our scrapy's  csv folder and go back to Anaconda Prompt Terminal and type: 
+sec = pd.read_csv('pw_data_clean.csv')
+merge = pd.merge(test,sec,how='left', on='Symbol')
+merge.to_csv('pw_data_clean.csv',index=False)

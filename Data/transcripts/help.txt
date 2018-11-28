@@ -1,0 +1,11 @@
+# Transcript info scrapped from www.seekingalpha.com
+
+# Instructions:
+#
+# 1st) Scrapping 
+# Open Anaconda Prompt Terminal
+# Locate trans folder where the file "scrapy.cfg" is present and execute:
+scrapy crawl trans_spider
+#
+# 2nd) Output stores in trans.json file
+

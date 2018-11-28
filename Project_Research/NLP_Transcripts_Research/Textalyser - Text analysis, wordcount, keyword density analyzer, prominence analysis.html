@@ -1,0 +1,132 @@
+
+
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Text analysis, wordcount, keyword density analyzer, prominence analysis </title>
+<meta name="description" content="text analysis" />
+<meta name="keywords" content="text, analysis" />
+<META NAME="GOOGLEBOT" CONTENT="NOARCHIVE" />
+<link href="./textalyser.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+
+<table><tr><td></td><td></td><td>
+
+
+
+</td>
+<td><a href="index.php?lang=fr">Franais</a></td><td>
+
+<a href="index.php?sel=message&amp;lang=en">Contact/Suggestions/Investors</a>
+
+
+</td><td>
+
+<a href="index.php?sel=make_a_link&amp;lang=en">Make a link</a>
+
+
+</td>
+</tr></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="line"><tr><td></td></tr></table>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<table><tr><td><h1>Textalyser</h1></td><td class="space"></td>
+<td>Welcome to the online text analysis tool, the detailed statistics of your text, perfect for translators (quoting), for webmasters (ranking) or for normal users, to know the subject of a text. Now with new features as the anlysis of  words groups, finding out the keyword density, analyse the prominence of word or expressions. Webmasters can analyse the links on their pages. More instructions are about to be written, please send us your feedback !</td></tr></table>
+<table class="line"><tr><td></td></tr></table>
+
+
+<form action="index.php?lang=en#analysis" method="post" enctype="multipart/form-data">
+
+Enter your text to analyze here :<br />
+<textarea name="text_main" cols="55" rows="5"></textarea><br />
+<table><tr><td></td><td>or analyze a website :<input type="text" name="site_to_analyze" size="18" maxlength="100" class="cour" value="http://"></td></tr></table> 
+<table><tr><td></td><td>or select file from local hdd :<input type="file" name="file_to_analyze" size="18" class="cour" value=""></td></tr></table> 
+
+<table><tr><td>Analysis options :</td><td></td><td></td></tr>
+<tr><td></td><td> Minimum characters per word :</td><td><select class="cour" name="min_char">
+	<option value="3" selected> 3</option>
+	<option value="1"> 1</option>
+	<option value="2"> 2</option>
+	<option value="3"> 3</option>
+	<option value="4"> 4</option>
+	<option value="5"> 5</option>
+	<option value="6"> 6</option>
+	<option value="7"> 7</option>
+	
+	
+</select></td></tr>
+<tr><td></td><td> Special word or expression to analyze : </td>
+<td><input type="text" name="special_word" size="18" maxlength="100" class="cour" value=""></td></tr>
+
+<tr><td></td><td>Number of words to be analyzed : </td><td><select name="words_toanalyse" class="cour">
+	<option value="10" selected> 10</option>
+	<option value="10"> 10</option>
+	<option value="20"> 20</option>
+	<option value="30"> 30</option>
+	<option value="40"> 40</option>
+	<option value="50"> 50</option>
+	<option value="60"> 60</option>
+	<option value="70"> 70</option>
+	<option value="200"> 200</option>
+	<option value="1000"> 1000</option>
+</select></td></tr>
+<tr><td></td><td>Ignore numbers : </td><td><input name="count_numbers" type="checkbox" value="1" checked></td></tr>
+<tr><td></td><td>Log the query (only for websites) : </td><td><input name="is_log" type="checkbox" value="1" checked></td></tr>
+<tr><td></td><td>Apply stoplist :</td><td><select name="stoplist_lang" class="cour">
+	<option value="0">none</option>
+	<option value="1" selected>English</option>
+	<option value="2">French</option>
+	</select></td></tr>
+<tr><td></td><td>Apply own stoplist (separe with blanks) :</td>
+<td><input type="text" name="stoplist_perso" size="18" maxlength="100" class="cour" value=""></td></tr>
+<tr><td></td><td>Make a link analysis : </td>
+<td><input name="is_link" type="checkbox" value="1" ></td></tr>
+<tr><td></td><td>Exhaustive polyword phrases : </td>
+<td><input name="is_exh" type="checkbox" value="1" ></td></tr>
+</table>
+<input class="cour" type="submit" value="Analyze the text">
+
+</form>
+
+
+
+
+
+
+<table class="line"><tr><td></td></tr></table>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+
+<table class="line"><tr><td></td></tr></table>
+<span class="lit">all rights reserved 2004 © textalyser.net  <a class="lit" href="./">text analysis</a> V 1.05 <a class="lit"  href="./text_analysis_help.html">help</a>  Execution time 0.0103 seconds </span>
+
+
+
+
+
+</body>
+</html>
+
+
+
